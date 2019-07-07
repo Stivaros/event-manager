@@ -155,3 +155,10 @@ modules.xml
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/rails,rubymine+all
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
