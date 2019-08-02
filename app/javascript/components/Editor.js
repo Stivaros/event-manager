@@ -27,7 +27,7 @@ class Editor extends React.Component {
 
         return (
             <div>
-                <Header />>
+                <Header />
                 <EventList events={events} />
             </div>
         );
