@@ -91,7 +91,7 @@ class EventForm extends React.Component {
           <div>
             <label htmlFor="host">
               <strong>Host:</strong>
-              <input type="text" id="host" name="title" onChange={this.handleInputChange} />
+              <input type="text" id="host" name="host" onChange={this.handleInputChange} />
             </label>
           </div>
           <div>
