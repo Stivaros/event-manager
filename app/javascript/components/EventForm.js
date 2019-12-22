@@ -89,6 +89,12 @@ class EventForm extends React.Component {
             </label>
           </div>
           <div>
+            <label htmlFor="host">
+              <strong>Host:</strong>
+              <input type="text" id="host" name="title" onChange={this.handleInputChange} />
+            </label>
+          </div>
+          <div>
             <label htmlFor="published">
               <strong>Publish:</strong>
               <input type="text" id="published" name="published" onChange={this.handleInputChange} />
