@@ -7,6 +7,8 @@ export const handleAjaxError = (err) => {
 
 export const isEmptyObject = obj => Object.keys(obj).length === 0;
 
+const isValidDate = dateObj => !Number.isNaN(Date.parse(dateObj));
+
 export const validateEvent = (event) => {
   const errors = {};
 
@@ -14,7 +16,7 @@ export const validateEvent = (event) => {
     errors.event_type = 'You must enter an event_type';
   }
 
-  if (event.event_date === '') {
+  if (!isValidDate(event.event_date)) {
     errors.event_date = 'You must enter a valid date';
   }
 
@@ -34,7 +36,7 @@ export const validateEvent = (event) => {
   return errors;
 };
 
-export const formatDate = d => {
+export const formatDate = (d) => {
   const YYYY = d.getFullYear();
   const MM = `0${d.getMonth() + 1}`.slice(-2);
   const DD = `0${d.getDate()}`.slice(-2);
