@@ -1,3 +1,10 @@
+import { error } from './notifications';
+
+export const handleAjaxError = (err) => {
+  error('Something went wrong');
+  console.warn(err);
+};
+
 export const isEmptyObject = obj => Object.keys(obj).length === 0;
 
 export const validateEvent = (event) => {
