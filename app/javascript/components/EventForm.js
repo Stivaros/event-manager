@@ -122,7 +122,7 @@ class EventForm extends React.Component {
           <div>
             <label htmlFor="published">
               <strong>Publish:</strong>
-              <input type="text" id="published" name="published" onChange={this.handleInputChange} />
+              <input type="checkbox" id="published" name="published" onChange={this.handleInputChange} />
             </label>
           </div>
           <div className="form-actions">
